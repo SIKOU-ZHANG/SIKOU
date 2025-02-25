@@ -1,0 +1,157 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+  background-color: #007BFF;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero 区域样式 */
+.hero {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* 特性展示区域样式 */
+.features {
+  display: flex;
+  /* 取消换行，让卡片横向排列 */
+  flex-wrap: nowrap; 
+  justify-content: center;
+  padding: 50px 0;
+  /* 允许容器在必要时横向滚动 */
+  overflow-x: auto; 
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  /* 缩小卡片宽度，确保能在一行显示多个卡片 */
+  width: 200px; 
+  /* 防止卡片宽度被内容撑开 */
+  flex-shrink: 0; 
+}
+
+.feature-card i {
+  color: #007BFF;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 开发者介绍和社区信息区域样式 */
+.developer-info {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  /* 添加最大宽度，防止在宽屏上过于分散 */
+  max-width: 1200px; 
+  /* 使用 margin: 0 auto 实现水平居中 */
+  margin: 0 auto; 
+}
+
+.developer-card,
+.community-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.developer-card h2,
+.community-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.developer-card p,
+.community-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.developer-card a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.developer-card a:hover {
+  text-decoration: underline;
+}
